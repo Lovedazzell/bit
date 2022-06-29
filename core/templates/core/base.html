@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} Make Money {% endblock title %} </title>
+    {% block css %}  
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    {% endblock css %}  
+    
+</head>
+<body >
+
+  {% block content %}
+
+
+
+   
+
+  {% endblock content %}
+
+
+
+
+
+  <script src="{% static 'celery_progress/celery_progress.js' %}"></script>
+  <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+  <script src="{% static 'core/js/bootstrap.js' %}"></script>
+  <script src="{% static 'core/js/jquery.js' %}"></script>
+  <script src="{% static 'core/js/popper.js' %}"></script>
+  <script src="{% static 'core/js/all.js' %}"></script>
+   
+  <script>
+    // vanilla JS version
+    document.addEventListener("DOMContentLoaded", function () {
+    var progressUrl = "{% url 'celery_progress:task_status' task_id %}";
+    CeleryProgressBar.initProgressBar(progressUrl);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block css %}
+{{ block.super}}
+<link rel="stylesheet" href="{% static 'core/css/dashboard.css' %}">
+{% endblock css %}
+{% block content %}
+
+
+   <!-- <div class='progress-wrapper'>
+    <div id='progress-bar' class='progress-bar' style="background-color: #68a9ef; width: 0%;">&nbsp;</div>
+  </div>
+  <div id="progress-bar-message">Waiting for progress to start...</div> -->
+<div class="panel">
+
+</div>
+<div class="d-flex justify-content-between">
+
+  <i class="fa-solid fa-bars text-light fa-2xl my-4 mx-3"></i>
+  <h2 class="text-center text-light  my-4" >Trezunt</h2>
+  <i class="fa-solid fa-square-user text-light fa-2xl my-4 mx-3"></i>
+  
+</div>
+<div class="container d-flex justify-content-center">
+
+  <div class="bg-light treasure border rounded money-display py-1 px-3 mb-4">
+    <h4 class="text-">
+      Tresure : 780
+    </h4>
+
+  </div>
+
+</div>
+<div class="container d-flex justify-content-center">
+
+    <div class="countdown">
+        <h1 class="countdoun-number"  >01</h1>
+    </div>
+</div>
+
+  <div class="group ">
+    <div class="box">
+      <p class="text-color text-center m-3"> <i class="fa-solid fa-palette"></i> Choose your color</p>
+
+      <div class="buttons text-center">
+        <span class="color-button btn green text-light"><i class="fa-solid fa-coins text-light"></i> Green</span>
+        <span  class="color-button btn blue text-light"><i class="fa-solid fa-coins text-light"></i> Blue</span>
+
+      </div>
+    </div>
+
+<div class="box" >
+      <p class="text-color text-center m-3"> <i class="fa-solid fa-cash-register"> </i>  Numbers Choice</p>
+     
+        <div class="buttons text-center my-3">
+          <span class="btn number bg-green">0</span>
+          <span class="btn number bg-green">1</span>
+          <span class="btn number bg-green">3</span>
+          <span class="btn number bg-green">3</span>
+          <span class="btn number bg-green">4</span>
+         
+           </div>
+           <div class="buttons text-center my-3">
+          <span class="btn number bg-green">0</span>
+          <span class="btn number bg-green">1</span>
+          <span class="btn number bg-green">3</span>
+          <span class="btn number bg-green">3</span>
+          <span class="btn number bg-green">4</span>
+        
+           </div>
+
+        <div class="buttons text-center my-3">
+          <span class="btn number bg-blue">0</span>
+          <span class="btn number bg-blue">0</span>
+          <span class="btn number bg-blue">0</span>
+          <span class="btn number bg-blue">0</span>
+          <span class="btn number bg-blue">0</span>
+         
+         
+           </div>
+           <div class="buttons text-center my-3">
+          <span class="btn number bg-blue">0</span>
+          <span class="btn number bg-blue">0</span>
+          <span class="btn number bg-blue">0</span>
+          <span class="btn number bg-blue">0</span>
+          <span class="btn number bg-blue">0</span>
+        
+           </div>
+     
+    </div>
+
+
+  </div>
+
+
+
+{% endblock content %}

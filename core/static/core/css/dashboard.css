@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(to right , rgb(219, 68, 174),rgb(54, 158, 184));
+    font-family: 'Changa', sans-serif;
+}
+
+.countdoun-number{
+    font-size: 130px;
+    height: auto;
+    width: 180px;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+}
+
+.treasure{
+    box-shadow: 3px 3px 5px;
+}
+
+.countdown{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px;
+}
+
+
+.group{
+    /* height: 100vh; */
+    margin-top: 40px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 30px 30px;
+    display: grid;
+}
+.number{
+    padding: 14px;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-blue{
+    background-color: blue;
+}
+
+
+.green{
+    background-color: green;
+}
+.green:hover{
+    background-color: rgb(4, 114, 4);
+}
+.panel{
+    /* min-height: 100vh; */
+    height: 100%;
+    background-color: rgba(4, 4, 78, 0.808);
+    position:absolute;
+    width: 100vw;
+    z-index: 8;
+}
+
+.blue{
+    background-color: blue;
+}
+.blue:hover{
+    background-color: rgb(0, 0, 180);
+}
+
+.color-button{
+    padding: 30px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+/* .color-button:hover{
+background:linear-gradient(to right , rgb(87, 8, 63),rgb(13, 38, 119));;
+} */
